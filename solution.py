@@ -1,13 +1,14 @@
 import math
 
+
 moves = [[-2, -1], [-2, +1], [-1, -2], [-1, +2], [+2, +1], [+2, -1], [+1, +2], [+1, -2]]
 mark = []
 que = []
 
-
-def toVect(number):
-  y = int(math.floor(number/8))
-  x = number%8
+# Eğer numaralandırılmış hücreler yerine koordinat sistemi kullanmak sınır tespiti ve klasik algoritmalar kullanmayı kolaylaştırır.
+def toVect(cellNumber):
+  y = int(math.floor(cellNumber/8))
+  x = cellNumber%8
   return x, y
 
 # vektorel koordinatları sayısal koordinata çeviralim
