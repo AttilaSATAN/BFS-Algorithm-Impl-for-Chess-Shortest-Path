@@ -6,7 +6,7 @@ mark = []
 que = []
 
 def marker(x, y):
-  mark.append(str(x) + '-' + str(x))
+  mark.append(str(x) + '-' + str(y))
 # Numaralandirilmis hucreler yerine koordinat sistemi kullanmak sinir tespiti ve klasik algoritmalar kullanmayi kolaylastirir.
 def toVect(cellNumber):
   y = int(math.floor(cellNumber/8))
@@ -25,7 +25,10 @@ def validate(move, x, y):
   if str(nX) + '-' + str(nY) in mark:
     return False
   
-  return 0 < nX < 7 and 0 < nY < 7
+  if -1 < nX < 8 and -1 < nY < 8:
+    marker(nX, nY)
+    return True
+  return False
 
 def answer(src, dest):
   
@@ -43,7 +46,7 @@ def answer(src, dest):
     d = que.pop(0)
     print(d[0], d[1], d[2])
     if d[0] == destC[0] and d[1] == destC[1]:
-      print(d[2])
+      print('HIT ', d[2])
       return d[2]
 
     for m in moves:
@@ -52,8 +55,8 @@ def answer(src, dest):
       y = m[1] + d[1]
       n = d[2] + 1
       if validate(m, d[0], d[1]):
-       marker(x,y)
-       que.append([x,y,n])
-  print('What now?')
+        marker(x,y)
+        que.append([x,y,n])
+  print('What now?', mark)
 
-answer(1,48)
+answer(1,60)
