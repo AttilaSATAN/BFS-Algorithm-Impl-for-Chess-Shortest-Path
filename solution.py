@@ -41,7 +41,7 @@ def answer(src, dest):
   while len(que) > 0:
     
     d = que.pop(0)
-
+    print(d[0], d[1], d[2])
     if d[0] == destC[0] and d[1] == destC[1]:
       print(d[2])
       return d[2]
@@ -51,8 +51,9 @@ def answer(src, dest):
       x = m[0] + d[0]
       y = m[1] + d[1]
       n = d[2] + 1
-      if validate(m, x, y):
+      if validate(m, d[0], d[1]):
        marker(x,y)
        que.append([x,y,n])
+  print('What now?')
 
-
+answer(1,48)
