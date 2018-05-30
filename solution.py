@@ -51,7 +51,8 @@ def answer(src, dest):
       x = m[0] + d[0]
       y = m[1] + d[1]
       n = d[2] + 1
-      marker(x,y)
-      que.append([x,y,n])
+      if validate(m, x, y):
+       marker(x,y)
+       que.append([x,y,n])
 
 
