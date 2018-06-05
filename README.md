@@ -1,4 +1,4 @@
-O-T-2
+# O-T-2
 Task 2
 
 Selamlar bir çözüm uyguladım. Umarım beğenirsiniz. Aslında kendi buluşum değil. Çok ünlü bir algoritmanın python a uygulanmasından ibaret. 
