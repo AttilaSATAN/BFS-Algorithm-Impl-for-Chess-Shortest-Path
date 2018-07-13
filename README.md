@@ -1,10 +1,5 @@
-# O-T-2
-Task 2
 
-Selamlar bir çözüm uyguladım. Umarım beğenirsiniz. Aslında kendi buluşum değil. Çok ünlü bir algoritmanın python a uygulanmasından ibaret. 
 
-Şahsen java deneyimim daha fazla olsa da (Android) programatik dillerde daha iyiyim. 
+Satranç tahtasındaki atın bir noktadan diğerine en az adımda gitmesi için gerekn adım sayısını bulmak için BFS algorithması ile bir çözüm uyguladım.
 
-Python ile daha önce hiç çalışmadım o yüzden küfür gibi gelebilecek convention hataları yapmış olabilirim şimdiden özür dilerim.
-
-:)
+Python ile daha önce hiç profesyonel anlamda çalışmadım o yüzden küfür gibi gelebilecek convention hataları yapmış olabilirim şimdiden özür dilerim.
